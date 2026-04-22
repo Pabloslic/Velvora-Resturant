@@ -14,13 +14,25 @@
     <header class="site-header">
       <nav class="topbar">
         <a class="brand" href="index.html">Velvora Bistro</a>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="menu.html">Menu</a>
-          <a href="delivery.html">Delivery</a>
+        <div class="nav-cluster">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="faq.html">FAQ</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
         <a class="nav-cta" href="index.html#contact">Book a Table</a>
       </nav>
+      <div class="nav-overlay"></div>
     </header>
 
     <main>
@@ -55,7 +67,8 @@
           </div>
 
           <div class="dish-actions">
-            <a class="button button-primary" href="index.html#contact">Reserve This Dish</a>
+            <button class="button button-primary" type="button" data-add-to-order data-default-label="Add to Order" data-name="Velvet Herb Chicken" data-price="13800" data-image="images/velvet herb chicken.jpg" data-description="Pan-seared chicken breast with rosemary jus, creamy polenta, and garlic greens.">Add to Order</button>
+            <a class="button button-secondary" href="order.html">View Order</a>
             <a class="button button-secondary" href="menu.html">Back to Menu</a>
           </div>
         </div>
@@ -66,5 +79,6 @@
       <p>Velvora Bistro &copy; 2026 - Crafted with passion, served with excellence.</p>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

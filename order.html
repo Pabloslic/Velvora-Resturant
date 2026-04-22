@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvora Bistro | Your Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="topbar">
+        <a class="brand" href="index.html">Velvora Bistro</a>
+        <div class="nav-cluster">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="faq.html">FAQ</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <a class="nav-cta" href="menu.html">Add More Dishes</a>
+      </nav>
+      <div class="nav-overlay"></div>
+
+      <section class="page-hero">
+        <div class="page-intro">
+          <p class="eyebrow">Order Summary</p>
+          <h1>Review Everything Before You Place Your Order</h1>
+          <p class="hero-text">This page shows the dishes you selected before moving to payment.</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section order-layout">
+        <div>
+          <div class="order-list" data-order-list></div>
+        </div>
+
+        <aside class="order-card">
+          <p class="eyebrow">Checkout</p>
+          <h2>Your Total</h2>
+          <div class="order-total">
+            <strong>Amount</strong>
+            <span data-order-total>NGN 0</span>
+          </div>
+          <div class="dish-actions">
+            <a class="button button-primary" href="payment.html">Place Order</a>
+            <a class="button button-secondary" href="menu.html">Back to Menu</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Velvora Bistro &copy; 2026 - Crafted with passion, served with excellence.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvora Bistro | Track Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="topbar">
+        <a class="brand" href="index.html">Velvora Bistro</a>
+        <div class="nav-cluster">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <a class="nav-cta" href="payment.html">Payment</a>
+      </nav>
+      <div class="nav-overlay"></div>
+
+      <section class="page-hero">
+        <div class="page-intro">
+          <p class="eyebrow">Delivery Tracking</p>
+          <h1>Track Your Order in Real Time</h1>
+          <p class="hero-text">Follow your Velvora order from kitchen confirmation to doorstep delivery.</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section tracking-layout">
+        <div class="tracking-card">
+          <p class="eyebrow">Current Status</p>
+          <h2>Your Order Is On The Way</h2>
+          <p class="faq-intro">
+            We are currently preparing and dispatching your order. Use the progress tracker below
+            to see where it is in the process.
+          </p>
+          <span class="tracking-code">Tracking Code: VEL-20841</span>
+
+          <div class="tracking-steps">
+            <article class="tracking-step">
+              <div class="tracking-badge">1</div>
+              <div>
+                <h3>Order Confirmed</h3>
+                <p>Your selection has been received and queued in the Velvora kitchen.</p>
+              </div>
+            </article>
+            <article class="tracking-step is-active">
+              <div class="tracking-badge">2</div>
+              <div>
+                <h3>Being Prepared</h3>
+                <p>Your dishes are currently being prepared fresh by our chefs.</p>
+              </div>
+            </article>
+            <article class="tracking-step">
+              <div class="tracking-badge">3</div>
+              <div>
+                <h3>Out for Delivery</h3>
+                <p>Your rider will head out as soon as the package is sealed and ready.</p>
+              </div>
+            </article>
+            <article class="tracking-step">
+              <div class="tracking-badge">4</div>
+              <div>
+                <h3>Delivered</h3>
+                <p>Your order will be marked complete once it reaches your location.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="tracking-card">
+          <p class="eyebrow">Delivery Details</p>
+          <h2>Estimated Arrival</h2>
+          <p class="faq-intro">Expected within 35-45 minutes depending on traffic and distance.</p>
+          <div class="dish-actions">
+            <a class="button button-primary" href="delivery.html">Back to Delivery</a>
+            <a class="button button-secondary" href="faq.html">View FAQ</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Velvora Bistro &copy; 2026 - Crafted with passion, served with excellence.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

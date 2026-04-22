@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvora Bistro | Payment Options</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="topbar">
+        <a class="brand" href="index.html">Velvora Bistro</a>
+        <div class="nav-cluster">
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="tracking.html">Tracking</a>
+            <a href="faq.html">FAQ</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <a class="nav-cta" href="order.html">Back to Order</a>
+      </nav>
+      <div class="nav-overlay"></div>
+
+      <section class="page-hero">
+        <div class="page-intro">
+          <p class="eyebrow">Payment</p>
+          <h1>Choose How You Want To Pay</h1>
+          <p class="hero-text">After reviewing your selected dishes, choose the payment option that works best for you.</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section payment-layout">
+        <div class="payment-card">
+          <p class="eyebrow">Payment Types</p>
+          <h2>Available Payment Methods</h2>
+          <div class="payment-options">
+            <button class="payment-option payment-option-button is-active" type="button" data-payment-option="transfer">
+              <strong>Bank Transfer</strong>
+              <p>Pay directly to the restaurant account and send proof of payment on WhatsApp for confirmation.</p>
+            </button>
+            <button class="payment-option payment-option-button" type="button" data-payment-option="card">
+              <strong>Debit Card</strong>
+              <p>Use your ATM card on pickup or at the restaurant if you are dining in.</p>
+            </button>
+            <button class="payment-option payment-option-button" type="button" data-payment-option="delivery">
+              <strong>Cash On Delivery</strong>
+              <p>Available for selected nearby locations for fast and convenient local delivery orders.</p>
+            </button>
+          </div>
+
+          <div class="payment-panels">
+            <section class="payment-detail is-active" data-payment-panel="transfer">
+              <h3>Upload Your Proof of Payment</h3>
+              <p class="hero-text">Make your transfer, then attach your receipt or screenshot below.</p>
+              <form class="payment-form">
+                <label class="payment-label" for="transfer-name">Account Name</label>
+                <input id="transfer-name" class="payment-input" type="text" placeholder="Your full name">
+
+                <label class="payment-label" for="transfer-proof">Proof of Payment</label>
+                <input id="transfer-proof" class="payment-input payment-file" type="file" accept="image/*,.pdf">
+
+                <button class="button button-primary" type="submit">Submit Proof</button>
+              </form>
+            </section>
+
+            <section class="payment-detail" data-payment-panel="card">
+              <h3>Enter Your Card Details</h3>
+              <p class="hero-text">Fill in your card information below to continue with card payment.</p>
+              <form class="payment-form payment-form-grid">
+                <label class="payment-label payment-full" for="card-name">Cardholder Name</label>
+                <input id="card-name" class="payment-input payment-full" type="text" placeholder="Name on card">
+
+                <label class="payment-label payment-full" for="card-number">Card Number</label>
+                <input id="card-number" class="payment-input payment-full" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456">
+
+                <label class="payment-label" for="card-expiry">Expiry Date</label>
+                <input id="card-expiry" class="payment-input" type="text" placeholder="MM/YY">
+
+                <label class="payment-label" for="card-cvv">CVV</label>
+                <input id="card-cvv" class="payment-input" type="password" inputmode="numeric" placeholder="123">
+
+                <button class="button button-primary payment-full" type="submit">Pay With Card</button>
+              </form>
+            </section>
+
+            <section class="payment-detail" data-payment-panel="delivery">
+              <h3>Confirm Pay on Delivery</h3>
+              <p class="hero-text">Choose this if you want to settle payment when your order gets to you.</p>
+              <form class="payment-form">
+                <label class="payment-check">
+                  <input type="checkbox" id="delivery-confirm">
+                  <span>I confirm that I want to pay when the order is delivered.</span>
+                </label>
+                <button class="button button-primary" type="submit">Confirm Pay on Delivery</button>
+              </form>
+            </section>
+          </div>
+        </div>
+
+        <aside class="payment-card">
+          <p class="eyebrow">Order Snapshot</p>
+          <h2>What You're Paying For</h2>
+          <p class="hero-text" data-payment-summary>No items selected yet.</p>
+          <div class="dish-actions">
+            <a class="button button-primary" href="delivery.html">Confirm Delivery</a>
+            <a class="button button-secondary" href="index.html#contact">Contact Restaurant</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Velvora Bistro &copy; 2026 - Crafted with passion, served with excellence.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
